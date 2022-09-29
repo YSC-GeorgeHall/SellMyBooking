@@ -11,6 +11,9 @@
       <style>
          body {
          background-color: #f7f7f7;
+        
+         background: url(images/hero3.jpg) repeat 0 0; 
+         background-size: auto;
          }
          .dropdown:hover .dropdown-menu{
          display: block;
@@ -44,7 +47,7 @@
       </ul>
 <!-- centred logo end -->
 <!-- Navbar start -->
-      <ul class="nav justify-content-center" style="padding-top: 15px;">
+      <ul class="nav justify-content-center" style="padding-top: 15px; ">
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,6 +77,16 @@
       </ul>
 <!-- navbar end -->
 
+<div class="jumbotron d-flex justify-content-center">
+  <div>
+    <h1 class="display-3">Welcome to Sell My Booking!</h1>
+
+    <p class="lead d-flex justify-content-center" >A place to sell things you didn't know you could sell</p>
+    <div class="d-flex justify-content-center">
+<button type="button d-flex justify-content-center" class="btn btn-outline-secondary">View our listings</button>
+    </div>
+  </div>
+</div>
 
 
 
