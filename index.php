@@ -54,14 +54,14 @@
    </head>
    <body>
 <!-- socials top right start -->
-      <div class="d-flex justify-content-end" style="padding-top:20px;">
+      <div class="d-flex justify-content-end" style="padding-top:10px;">
       <a href ="https://www.w3schools.com">  <i class="fa-brands fa-facebook fa-2xl " style="padding-right: 5px;"></i></a>
       <a href ="https://www.w3schools.com">  <i class="fa-brands fa-twitter fa-2xl" style="padding-right: 5px;"></i></a>
       <a href ="https://www.w3schools.com">   <i class="fa-brands fa-instagram fa-2xl" style="padding-right: 15px;"></i></a>
       </div>
 <!-- socials top right end -->
 <!-- centred logo start -->
-      <ul class="nav justify-content-center" style="padding-top: 15px;">
+      <ul class="nav justify-content-center" style="padding-top: 0px;">
       <a href ="index.php">  <img src="images/SMB3.png" alt="logo" style="height:150px;"></a>
       </ul>
 <!-- centred logo end -->
@@ -82,6 +82,9 @@
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#" style="padding-right: 100px;">Last Minute</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#" style="padding-right: 100px;">Pricing</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#" style="padding-right: 100px;">Register</a>
@@ -153,7 +156,7 @@
 <h1 class="display-6" style="padding-top: 10px;">Promoted Listings</h1>
 
 <div class="row" style="padding-top: 20px;">
-   <div class="col-md-2 text-center">
+   <div class="col-md-4 text-center">
    <img class="card-img-top" src="images/hero3.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">The Maldives</h5>
@@ -161,7 +164,7 @@
     <a href="#" class="btn btn-primary">View Listing</a>
   </div>
    </div>
-   <div class="col-md-2 text-center">
+   <div class="col-md-4 text-center">
    <img class="card-img-top" src="images/hero3.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">The Maldives</h5>
