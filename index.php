@@ -167,7 +167,7 @@
    <div class="col-md-4 text-center">
    <img class="card-img-top" src="images/hero3.jpg" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">The Maldives</h5>
+    <h5 class="card-title">Spain</h5>
     <p class="card-text">May 2022<br>2 Adults<br>The Ritz</p>
     <a href="#" class="btn btn-primary">View Listing</a>
   </div>
