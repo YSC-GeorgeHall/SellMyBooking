@@ -87,10 +87,10 @@
                         <a class="nav-link" href="#" style="padding-right: 100px;">Pricing</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="padding-right: 100px;">Register</a>
+                        <a class="nav-link" href="registration.php" style="padding-right: 100px;">Register</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#" >Log In</a>
+                        <a class="nav-link" href="login.php" >Log In</a>
                      </li>
                   </ul>
                </div>
