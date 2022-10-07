@@ -191,82 +191,37 @@
         <!-- navbar end -->
         <!-- Constainer Start -->
         <div class="container">
-            <?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
-                {
-                ?>
-            <span>
-                Welcome, <?php echo htmlspecialchars($_SESSION["username"]);?> 
-                <form action="insert.php" method="post">
-                    <p>       
-                    <div class="form-group">
-                        <label for="listing_name"></label>
-                        <input type="text" class="form-control" name="listing_name" id="listing_name" placeholder="Where are you travelling to?">
-                        <label for="departure_date">departure_date:</label>
-                        <input type="date" class="form-control" name="departure_date" id="departure_date">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">£</span>
-                            <input type="text" class="form-control"  name="booking_cost" id="booking_cost" placeholder="How much was your booking in total">
-                        </div>
-                        <div class="input-group mb-3">
-                            <label class="input-group-text" for="inputGroupSelect01">Adults</label>
-                            <select class="form-select" name="adults" id="adults">
-                                <option selected>Choose...</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                        <div class="input-group mb-3">
-                            <label class="input-group-text" for="inputGroupSelect01">Children</label>
-                            <select class="form-select" name="children" id="children">
-                                <option selected>Choose...</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                        <div class="input-group mb-3">
-                            <label class="input-group-text" for="inputGroupSelect01">Infants</label>
-                            <select class="form-select" name="infants" id="infants">
-                                <option selected>Choose...</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                    </div>
-                    </p>
-                    <button class="btn btn-primary" input type="submit" type="button" value="Submit">Submit</button>
-                </form>
-            </span>
-            <?php }else{ ?>
-            <span>
-                Create Profile
-                <h2>Login</h2>
-                <p>You must be logged in to create a listing</p>
-                <?php 
-                    if(!empty($login_err)){
-                        echo '<div class="alert alert-danger">' . $login_err . '</div>';
-                    }        
-                    ?>
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                    <div class="form-group">
-                        <label>Username</label>
-                        <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                        <span class="invalid-feedback"><?php echo $username_err; ?></span>
-                    </div>
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
-                        <span class="invalid-feedback"><?php echo $password_err; ?></span>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-primary" value="Login">
-                    </div>
-                    <p>Don't have an account? <a href="registration.php">Sign up now</a>.</p>
-                </form>
-            </span>
-            <?php } ?>
+        <?php
+require_once "config.php";
+
+
+$sql = "SELECT *  FROM listings ";
+if ($result = mysqli_query($link, $sql))
+{
+    if (mysqli_num_rows($result) > 0)
+    {
+        echo "<div class=row>";
+        while ($row = mysqli_fetch_array($result))
+        {   
+            echo "<div class=col-md-4>  $row[listing_name] </div>";
+            echo "<div class=col-md-4>  $row[departure_date] </div>";
+            echo "<div class=col-md-4>  $row[booking_cost] </div>";
+            echo "<div class=col-md-4>  $row[adults] </div>";
+
+
+        }
+        echo "</div>";
+    }
+    else
+    {
+        echo "No records matching your query were found.";
+    }
+}
+else
+{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+?>
             <!-- Footer Start -->
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <ul class="nav col-md-4 justify-content-start">

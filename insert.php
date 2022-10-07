@@ -17,7 +17,7 @@ $infants = mysqli_real_escape_string($link, $_REQUEST['infants']);
 
 $sql = "INSERT INTO listings (id, listing_name, departure_date, booking_cost, adults, children, infants) VALUES ('$id', '$listing_name', '$departure_date', '$booking_cost', '$adults', '$children', '$infants')";
 if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";
+    header("Location: http://www.google.com/");
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
