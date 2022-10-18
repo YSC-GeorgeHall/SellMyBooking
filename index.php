@@ -80,7 +80,7 @@
                         <a class="nav-link" href="sellabooking.php" style="padding-right: 100px;">Sell My Booking</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="alllistings.php" style="padding-right: 100px;">View Listings</a>
+                        <a class="nav-link" href="all-listings.php" style="padding-right: 100px;">View Listings</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="lastmin.php" style="padding-right: 100px;">Last Minute</a>
@@ -92,9 +92,17 @@
                      <?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
                     {
                     ?>
-                                     <li class="nav-item">
-                        <a class="nav-link" href="logout.php" >Log Out</a>
-                     </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Current Listings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
+          </ul>
+        </li>
                 <?php }else{ ?>
                   
                   <li class="nav-item">
@@ -110,11 +118,7 @@
          </nav>
       </ul>
 <!-- navbar end -->
-<?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
-                                    {
-                                    ?>
-                                <span>Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
-                                <?php } ?>
+
 
 
 <!-- Constainer Start --><div class="container">

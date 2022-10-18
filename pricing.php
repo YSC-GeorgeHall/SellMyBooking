@@ -114,10 +114,10 @@
 <!-- Constainer Start --><div class="container">
 <div class="row justify-content-md-center">
 <div class="col-md-3 card text-white bg-secondary mb-3" style="margin-right: 15px;">
-  <div class="card-header">Standard</div>
+  <div class="card-header">Standard From £1</div>
   <div class="card-body">
-    <h5 class="card-title">List only <br> From £1</h5>
-    <p class="card-text">Your listing, once approved, will appear on Sell My Booking only.</p>
+    <a href="sellabooking.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Sell My Booking</a>
+    <p class="card-text">Only on sellmybooking.com</p>
     <b>Add your listing</b><br>
     <i class="fa-solid fa-check"></i> Add a title and description<br>
     <i class="fa-solid fa-check"></i> Add quantity<br>
@@ -136,12 +136,14 @@
     <i class="fa-solid fa-check"></i> Share URL<br>
     <b>Listing support</b><br>
     <i class="fa-solid fa-check"></i> Response with in 24 hours<br>
+    
   </div>
+  <a href="sellabooking.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
 </div>
 <div class="col-md-3 card text-white bg-secondary mb-3" style="margin-right: 15px;">
-  <div class="card-header">Standard Plus</div>
+  <div class="card-header">Plus from £25</div>
   <div class="card-body">
-    <h5 class="card-title">List and Advertised <br> From £26</h5>
+    <a href="sellabooking.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Sell My Booking</a>
     <p class="card-text">Your listing will appear on Sell My Booking, and a choice of appearing on Sell My booking homepage or our newsletter</p>
     <i class="fa-solid fa-check"></i> All of the Standard offering<br>
     <b>Listing approval</b><br>
@@ -149,14 +151,16 @@
     <b>Marketing</b><br>
     <i class="fa-solid fa-check"></i> Newsletter or homepage promotion<br>
     <i class="fa-solid fa-check"></i> Appear in listings in creation order<br>
+
   </div>
+  <a href="sellabooking.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
 </div>
 <div class="col-md-3 card text-white bg-secondary mb-3">
-  <div class="card-header">Premium</div>
+  <div class="card-header">Premium from £40</div>
   <div class="card-body">
-    <h5 class="card-title">Premium Adveristing <br> From £41</h5>
+    <a href="sellabooking.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Sell My Booking</a>
     <p class="card-text">Your listing will appear on Sell My Booking, and appear on Sell My booking homepage and our newsletter</p>
-    <i class="fa-solid fa-check"></i> All of the Standard Plus<br>
+    <i class="fa-solid fa-check"></i> All of the Plus<br>
     <b>Listing approval</b><br>
     <i class="fa-solid fa-check"></i> Within 12 hours<br>
     <b>Marketing</b><br>
@@ -164,8 +168,8 @@
     <i class="fa-solid fa-check"></i> Homepage promotion for 1 week<br>
     <i class="fa-solid fa-check"></i> Always at the top of listings<br>
     <i class="fa-solid fa-check"></i> Shared to our social channels<br>
-  </div>
 </div>
+<a href="sellabooking.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom: 10px;">Select</a>
 </div>
 
 <div class="d-flex justify-content-center">

@@ -203,75 +203,49 @@
                 {
                 ?>
             <span>
-
-
                 Welcome, <?php echo htmlspecialchars($_SESSION["username"]);?> 
-                Please select which payment option you want to choose for your listing
-
-                
-
-                <div class="row justify-content-md-center">
-<div class="col-md-3 card text-white bg-secondary mb-3" style="margin-right: 15px;">
-  <div class="card-header">Standard From £1</div>
-  <div class="card-body">
-    <a href="https://buy.stripe.com/test_dR6cPo5Etfms7S0288" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
-    <p class="card-text">Only on sellmybooking.com</p>
-    <b>Add your listing</b><br>
-    <i class="fa-solid fa-check"></i> Add a title and description<br>
-    <i class="fa-solid fa-check"></i> Add quantity<br>
-    <i class="fa-solid fa-check"></i> Image upload<br>
-    <i class="fa-solid fa-check"></i> Links to more info<br>
-    <i class="fa-solid fa-check"></i> Add pricing<br>
-    <b>Listing approval</b><br>
-    <i class="fa-solid fa-check"></i> Within 24 hours<br>
-    <i class="fa-solid fa-check"></i> Approval alerts by email<br>
-    <i class="fa-solid fa-check"></i> Non approval notificaiton by emaik<br>
-    <b>Listing management</b><br>
-    <i class="fa-solid fa-check"></i> View  and edit listing<br>
-    <i class="fa-solid fa-check"></i> End listing<br>
-    <b>Marketing</b><br>
-    <i class="fa-solid fa-check"></i> Share to socials<br>
-    <i class="fa-solid fa-check"></i> Share URL<br>
-    <b>Listing support</b><br>
-    <i class="fa-solid fa-check"></i> Response with in 24 hours<br>
-    
-  </div>
-  <a href="https://buy.stripe.com/test_dR6cPo5Etfms7S0288" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
-</div>
-<div class="col-md-3 card text-white bg-secondary mb-3" style="margin-right: 15px;">
-  <div class="card-header">Plus from £25</div>
-  <div class="card-body">
-    <a href="https://buy.stripe.com/test_00g16G6Ixdeka08bIJ" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
-    <p class="card-text">Your listing will appear on Sell My Booking, and a choice of appearing on Sell My booking homepage or our newsletter</p>
-    <i class="fa-solid fa-check"></i> All of the Standard offering<br>
-    <b>Listing approval</b><br>
-    <i class="fa-solid fa-check"></i> within 16 hours<br>
-    <b>Marketing</b><br>
-    <i class="fa-solid fa-check"></i> Newsletter or homepage promotion<br>
-    <i class="fa-solid fa-check"></i> Appear in listings in creation order<br>
-
-  </div>
-  <a href="https://buy.stripe.com/test_00g16G6Ixdeka08bIJ" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
-</div>
-<div class="col-md-3 card text-white bg-secondary mb-3">
-  <div class="card-header">Premium from £40</div>
-  <div class="card-body">
-    <a href="https://buy.stripe.com/test_cN23eO1od1vCgowfZ0" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
-    <p class="card-text">Your listing will appear on Sell My Booking, and appear on Sell My booking homepage and our newsletter</p>
-    <i class="fa-solid fa-check"></i> All of the Plus<br>
-    <b>Listing approval</b><br>
-    <i class="fa-solid fa-check"></i> Within 12 hours<br>
-    <b>Marketing</b><br>
-    <i class="fa-solid fa-check"></i> Newsletter promotion<br>
-    <i class="fa-solid fa-check"></i> Homepage promotion for 1 week<br>
-    <i class="fa-solid fa-check"></i> Always at the top of listings<br>
-    <i class="fa-solid fa-check"></i> Shared to our social channels<br>
-   
-</div><a href="https://buy.stripe.com/test_cN23eO1od1vCgowfZ0" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom: 10px;">Select</a>
-</div>
-
-
-                
+                <form action="insert.php" method="post">
+                    <p>       
+                    <div class="form-group">
+                        <label for="listing_name"></label>
+                        <input type="text" class="form-control" name="listing_name" id="listing_name" placeholder="Where are you travelling to?">
+                        <label for="departure_date">departure_date:</label>
+                        <input type="date" class="form-control" name="departure_date" id="departure_date">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">£</span>
+                            <input type="text" class="form-control"  name="booking_cost" id="booking_cost" placeholder="How much was your booking in total">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Adults</label>
+                            <select class="form-select" name="adults" id="adults">
+                                <option selected>Choose...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Children</label>
+                            <select class="form-select" name="children" id="children">
+                                <option selected>Choose...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Infants</label>
+                            <select class="form-select" name="infants" id="infants">
+                                <option selected>Choose...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    </p>
+                    <button class="btn btn-primary" input type="submit" type="button" value="Submit">Submit</button>
+                </form>
             </span>
             <?php }else{ ?>
             <span>
