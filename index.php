@@ -80,7 +80,7 @@
                         <a class="nav-link" href="sellabooking.php" style="padding-right: 100px;">Sell My Booking</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="all-listings.php" style="padding-right: 100px;">View Listings</a>
+                        <a class="nav-link" href="alllistings.php" style="padding-right: 100px;">View Listings</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="lastmin.php" style="padding-right: 100px;">Last Minute</a>
@@ -197,7 +197,7 @@
 
     <ul class="nav col-md-4 justify-content-start">
 
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="pricing.php" class="nav-link px-2 text-muted">Pricing</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">T&Cs</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About Us</a></li>
