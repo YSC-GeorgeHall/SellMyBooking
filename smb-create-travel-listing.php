@@ -172,17 +172,19 @@
                             <?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
                                 {
                                 ?>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><a class="dropdown-item" href="#">Current Listings</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
-          </ul>
-        </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Current Listings</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
+                                </ul>
+                            </li>
                             <?php }else{ ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="registration.php" style="padding-right: 100px;">Register</a>
@@ -203,7 +205,6 @@
                 {
                 ?>
             <span>
-                Welcome, <?php echo htmlspecialchars($_SESSION["username"]);?> 
                 <form action="insert.php" method="post">
                     <p>       
                     <div class="form-group">
@@ -242,6 +243,15 @@
                                 <option value="3">3</option>
                             </select>
                         </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                            <input type="file" class="form-control" name="bkgconfirmation" id="bkgconfirmation">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                            <input type="file" class="form-control" name="user_image" id="user_image">
+                        </div>
+                        <input type="text" class="form-control" name="website_url" id="website_url" placeholder="URL">
                     </div>
                     </p>
                     <button class="btn btn-primary" input type="submit" type="button" value="Submit">Submit</button>

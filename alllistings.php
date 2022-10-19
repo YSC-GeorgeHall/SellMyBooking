@@ -195,7 +195,7 @@
 require_once "config.php";
 
 
-$sql = "SELECT *  FROM listings ";
+$sql = "SELECT *  FROM listings where listing_status = 'approved'";
 if ($result = mysqli_query($link, $sql))
 {
     if (mysqli_num_rows($result) > 0)
@@ -207,7 +207,9 @@ if ($result = mysqli_query($link, $sql))
             echo "<div class=col-md-4>  $row[departure_date] </div>";
             echo "<div class=col-md-4>  $row[booking_cost] </div>";
             echo "<div class=col-md-4>  $row[adults] </div>";
+            echo "<div class=col-md-4>  $row[bkgconfirmation] </div>";
 
+            echo "<img src='data:image/jpeg;base64," . base64_encode($row['bkgconfirmation']) . "'/></div>";
 
         }
         echo "</div>";
