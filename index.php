@@ -118,9 +118,6 @@
          </nav>
       </ul>
 <!-- navbar end -->
-
-new laptop git test
-
 <!-- Constainer Start --><div class="container">
 <div class="d-flex justify-content-center">
 <h1 class="display-3 style="text-align:="text-align: center;">Have a booking you cant go to?</h1><br>
