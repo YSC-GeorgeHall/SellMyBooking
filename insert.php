@@ -24,7 +24,7 @@ $status = ['status'];
 
 $sql = "INSERT INTO listings (id, listing_name, departure_date, booking_cost, adults, children, infants, bkgconfirmation, user_image, website_url, listing_status) VALUES ('$id', '$listing_name', '$departure_date', '$booking_cost', '$adults', '$children', '$infants', '$bkgconfirmation','$user_image', '$website_url', 'pending')";
 if(mysqli_query($link, $sql)){
-    header("Location: http://www.google.com/");
+    header("Location: welcome.php");
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
