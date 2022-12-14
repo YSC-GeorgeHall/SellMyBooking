@@ -131,7 +131,7 @@
     <h5 class="card-title text-center"><i class="fa-solid fa-1 fa-2xl" > </i></h5>
     <p class="card-text text-center" style="padding-top: 10px;" ><b>List your booking and await approval</b></p>
     <p>Register and create your listing! All bookings must be sold at face value, and the seller must list any potential extra charges. Ensure your booking is in a cancellation period or non refundable. We will then approve the listing.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
    </div>
   
@@ -140,7 +140,7 @@
     <h5 class="card-title text-center"><i class="fa-solid fa-2 fa-2xl" > </i></h5>
     <p class="card-text text-center" style="padding-top: 10px;" ><b>Share it</b></p>
     <p>Your listing is approved! Share it on your social channels and so will we! Purchase additional marketing to have your listing viewed more! The options are endless.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
    </div>
    <div class="col-md-2 text-center">
@@ -148,7 +148,7 @@
     <h5 class="card-title text-center"><i class="fa-solid fa-3 fa-2xl" > </i></h5>
     <p class="card-text text-center" style="padding-top: 10px;" ><b>Your listing is sold</b></p>
     <p>Congratulations! Someone has agreed to buy your listing! They will need to send us payment, within 12 hours, before anything else happens. We will notify the seller.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
    </div>
    <div class="col-md-4 text-center">
@@ -156,7 +156,7 @@
     <h5 class="card-title text-center"><i class="fa-solid fa-4 fa-2xl" > </i></h5>
     <p class="card-text text-center" style="padding-top: 10px;" ><b>Payment received and funds transferred</b></p>
     <p>Payment Received. The seller needs to complete any changes required, or any other documentation for selling the booking. When this is confirmed, the sale is approved and we will then trasnfer the funds to you!</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
    </div>
 

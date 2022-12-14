@@ -211,10 +211,10 @@
                 
 
                 <div class="row justify-content-md-center">
-<div class="col-md-3 card text-white bg-secondary mb-3" style="margin-right: 15px;">
+<div class="col-md-3 card text-black bg-secondary mb-3" style="margin-right: 15px; background-color: lightgray !important;">
   <div class="card-header">Standard From £1</div>
   <div class="card-body">
-    <a href="https://buy.stripe.com/test_dR6cPo5Etfms7S0288" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
+    <a href="smb-create-travel-listing.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
     <p class="card-text">Only on sellmybooking.com</p>
     <b>Add your listing</b><br>
     <i class="fa-solid fa-check"></i> Add a title and description<br>
@@ -236,12 +236,12 @@
     <i class="fa-solid fa-check"></i> Response with in 24 hours<br>
     
   </div>
-  <a href="https://buy.stripe.com/test_dR6cPo5Etfms7S0288" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
+  <a href="https://buy.stripe.com/test_dR6cPo5Etfms7S0288" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Stripe</a>
 </div>
-<div class="col-md-3 card text-white bg-secondary mb-3" style="margin-right: 15px;">
+<div class="col-md-3 card text-black bg-secondary mb-3" style="margin-right: 15px; background-color: lightgray !important;">
   <div class="card-header">Plus from £25</div>
   <div class="card-body">
-    <a href="https://buy.stripe.com/test_00g16G6Ixdeka08bIJ" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
+    <a href="smb-create-travel-listing.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
     <p class="card-text">Your listing will appear on Sell My Booking, and a choice of appearing on Sell My booking homepage or our newsletter</p>
     <i class="fa-solid fa-check"></i> All of the Standard offering<br>
     <b>Listing approval</b><br>
@@ -251,12 +251,12 @@
     <i class="fa-solid fa-check"></i> Appear in listings in creation order<br>
 
   </div>
-  <a href="https://buy.stripe.com/test_00g16G6Ixdeka08bIJ" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
+  <a href="smb-create-travel-listing.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Stripe</a>
 </div>
-<div class="col-md-3 card text-white bg-secondary mb-3">
+<div class="col-md-3 card text-black bg-secondary mb-3" style=" background-color: lightgray !important;">
   <div class="card-header">Premium from £40</div>
   <div class="card-body">
-    <a href="https://buy.stripe.com/test_cN23eO1od1vCgowfZ0" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
+    <a href="smb-create-travel-listing.php" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom:10px;">Select</a>
     <p class="card-text">Your listing will appear on Sell My Booking, and appear on Sell My booking homepage and our newsletter</p>
     <i class="fa-solid fa-check"></i> All of the Plus<br>
     <b>Listing approval</b><br>
@@ -267,7 +267,7 @@
     <i class="fa-solid fa-check"></i> Always at the top of listings<br>
     <i class="fa-solid fa-check"></i> Shared to our social channels<br>
    
-</div><a href="https://buy.stripe.com/test_cN23eO1od1vCgowfZ0" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom: 10px;">Select</a>
+</div><a href="https://buy.stripe.com/test_cN23eO1od1vCgowfZ0" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true" style="width: 100%; margin-bottom: 10px;">Stripe</a>
 </div>
 
 

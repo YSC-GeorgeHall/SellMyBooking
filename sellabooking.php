@@ -71,7 +71,7 @@
       </ul>
 <!-- centred logo end -->
 <!-- Navbar start -->
-      <ul class="nav justify-content-center" style="padding-top: 15px; ">
+<ul class="nav justify-content-center" style="padding-top: 15px; ">
          <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +80,7 @@
                <div class="collapse navbar-collapse" id="navbarContent">
                   <ul class="navbar-nav" style="border-top: 1px solid black; border-bottom: 1px solid black;">
                      <li class="nav-item">
-                        <a class="nav-link active" href="sellabooking.php" style="padding-right: 100px;">Sell My Booking</a>
+                        <a class="nav-link" href="sellabooking.php" style="padding-right: 100px;">Sell My Booking</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="alllistings.php" style="padding-right: 100px;">View Listings</a>
@@ -95,9 +95,17 @@
                      <?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
                     {
                     ?>
-                                     <li class="nav-item">
-                        <a class="nav-link" href="logout.php" >Log Out</a>
-                     </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Current Listings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
+          </ul>
+        </li>
                 <?php }else{ ?>
                   
                   <li class="nav-item">
@@ -113,11 +121,7 @@
          </nav>
       </ul>
 <!-- navbar end -->
-<?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
-                                    {
-                                    ?>
-                                <span>Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
-                                <?php } ?>
+
 
 
 <!-- Constainer Start --><div class="container">
