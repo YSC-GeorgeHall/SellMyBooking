@@ -45,6 +45,7 @@
     line-height: 1.42857;
 }
 
+
       </style>
       <script>
          $(document).ready(function(){
@@ -62,7 +63,7 @@
       <div class="d-flex justify-content-end" style="padding-top:10px;">
       <a href ="https://www.w3schools.com">  <i class="fa-brands fa-facebook fa-2xl " style="padding-right: 5px;"></i></a>
       <a href ="https://www.w3schools.com">  <i class="fa-brands fa-twitter fa-2xl" style="padding-right: 5px;"></i></a>
-      <a href ="https://www.w3schools.com">   <i class="fa-brands fa-instagram fa-2xl" style="padding-right: 15px;"></i></a>
+      <a href ="https://www.w3schools.com">   <i class="fa-brands fa-instagram fa-2xl"></i></a>
       </div>
 <!-- socials top right end -->
 <!-- centred logo start -->
@@ -89,7 +90,7 @@
                         <a class="nav-link" href="lastmin.php" style="padding-right: 100px;">Last Minute</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="pricing.php" style="padding-right: 100px;">Pricing</a>
+                        <a class="nav-link" href="pricing.php">Pricing</a>
                      </li>
 
                      <?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
@@ -125,8 +126,43 @@
 
 
 <!-- Constainer Start --><div class="container">
+Please tell us what booking you would like to list
+<div class="row">
+<div class="col-md-4">
+<div class="card" style="border: solid 1px black;">
+  <div class="card-body">
+    Flight Booking
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card" style="border: solid 1px black;">
+  <div class="card-body">
+    Hotel Booking
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card" style="border: solid 1px black;">
+  <div class="card-body">
+    Package Holiday
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card" style="border: solid 1px black;">
+  <div class="card-body">
+    Event Tickets
+  </div>
+</div>
+</div>
+</div>
+</div>
 
-<h1 class="display-3 style="text-align:="text-align: center;">What do you want to list?</h1>
+
+<!-- <h1 class="display-3 style="text-align:="text-align: center;">What do you want to list?</h1>
 <div class="d-grid gap-2 col-6 mx-auto">
   <a href="smb-travel.php" button class="btn btn-primary" type="button" style="padding-top: 25px;">
   <i class="fa-sharp fa-solid fa-plane fa-2xl"><i class="fa-solid fa-earth-americas fa-xl" style="padding-left: 10px;" ><i class="fa-solid fa-train" style="padding-left: 10px;"></i></i></i><h1>Travel Booking</h1>
@@ -139,7 +175,7 @@
    <i class="fa-solid fa-masks-theater fa-2xl"><i class="fa-duotone fa-futbol fa-xl" style="padding-left: 10px;" ><i class="fa-solid fa-ticket" style="padding-left: 10px;"></i></i></i><h1>Event Booking</h1>
    <br><p>Please make sure you have read our FAQs and T&Cs before listing</p>
    </button>
-</div>
+</div> -->
 
 
 
